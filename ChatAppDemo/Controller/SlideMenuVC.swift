@@ -11,8 +11,15 @@ import UIKit
 class SlideMenuVC: UIViewController {
 
    
+ 
+    
     
     @IBOutlet weak var btnLogin: UIButton!
+    
+    @IBAction func prepareForUnwind(segue: UIStoryboard){
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,7 +31,7 @@ class SlideMenuVC: UIViewController {
    
     @IBAction func loginbtnPressed(_ sender: Any)
     {
-        
+   //  performSegue(withIdentifier: TO_LOGIN, sender: nil)
     }
     
     
